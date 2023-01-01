@@ -39,6 +39,7 @@ specifiers:
   remark: ^14.0.2
   remark-fff: ~0.4.2
   remark-footnotes: ~2.0.0
+  sass: ^1.57.1
   shiki-twoslash: ^3.1.0
   svelte: ^3.54.0
   svelte-check: ^2.10.2
@@ -93,17 +94,18 @@ devDependencies:
   remark: 14.0.2
   remark-fff: 0.4.2
   remark-footnotes: 2.0.0
+  sass: 1.57.1
   shiki-twoslash: 3.1.0
   svelte: 3.55.0
-  svelte-check: 2.10.2_qs7rgzvahok4cbkjoy5bgypde4
-  svelte-preprocess: 4.10.7_uldce6htlskfyklq5y55tk7pdy
+  svelte-check: 2.10.2_z65gjjye4e5pmogqkv4yolh7vq
+  svelte-preprocess: 4.10.7_nq7iz5ahyq7ey7rsxvk46dafhu
   svelte-preprocess-import-assets: 0.2.5_svelte@3.55.0
   tailwindcss: 3.2.4_postcss@8.4.20
   tslib: 2.4.1
   typescript: 4.9.4
   unist-util-visit: 4.1.1
   unocss: 0.47.6_vite@4.0.1
-  vite: 4.0.1_@types+node@18.11.15
+  vite: 4.0.1_dafpqtgzuh3dllqnfjfs7kj5ci
   vite-imagetools: 4.0.11
   vite-plugin-pwa: 0.14.0_dour7c72gn2l4fma65w55vssta
   workbox-window: 6.5.4
@@ -1834,7 +1836,7 @@ packages:
       svelte: 3.55.0
       tiny-glob: 0.2.9
       undici: 5.14.0
-      vite: 4.0.1_@types+node@18.11.15
+      vite: 4.0.1_dafpqtgzuh3dllqnfjfs7kj5ci
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1852,7 +1854,7 @@ packages:
       magic-string: 0.27.0
       svelte: 3.55.0
       svelte-hmr: 0.15.1_svelte@3.55.0
-      vite: 4.0.1_@types+node@18.11.15
+      vite: 4.0.1_dafpqtgzuh3dllqnfjfs7kj5ci
       vitefu: 0.2.3_vite@4.0.1
     transitivePeerDependencies:
       - supports-color
@@ -2268,7 +2270,7 @@ packages:
       '@unocss/scope': 0.47.6
       '@unocss/transformer-directives': 0.47.6
       magic-string: 0.27.0
-      vite: 4.0.1_@types+node@18.11.15
+      vite: 4.0.1_dafpqtgzuh3dllqnfjfs7kj5ci
     transitivePeerDependencies:
       - rollup
     dev: true
@@ -3641,6 +3643,10 @@ packages:
     engines: {node: '>=12.0.0'}
     dependencies:
       sharp: 0.31.2
+    dev: true
+
+  /immutable/4.2.1:
+    resolution: {integrity: sha512-7WYV7Q5BTs0nlQm7tl92rDYYoyELLKHoDMBKhrxEoiV4mrfVdRz8hzPiYOzH7yWjzoVEamxRuAqhxL2PLRwZYQ==}
     dev: true
 
   /import-fresh/3.3.0:
@@ -5345,6 +5351,16 @@ packages:
       rimraf: 2.7.1
     dev: true
 
+  /sass/1.57.1:
+    resolution: {integrity: sha512-O2+LwLS79op7GI0xZ8fqzF7X2m/m8WFfI02dHOdsK5R2ECeS5F62zrwg/relM1rjSLy7Vd/DiMNIvPrQGsA0jw==}
+    engines: {node: '>=12.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.2.1
+      source-map-js: 1.0.2
+    dev: true
+
   /semver/5.7.1:
     resolution: {integrity: sha512-sauaDf/PZdVgrLTNYHRtpXa1iRiKcaebiKQ1BJdpQlWH2lCvexQdX55snPFyK7QzpudqbCI0qXFfOasHdyNDGQ==}
     hasBin: true
@@ -5676,7 +5692,7 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /svelte-check/2.10.2_qs7rgzvahok4cbkjoy5bgypde4:
+  /svelte-check/2.10.2_z65gjjye4e5pmogqkv4yolh7vq:
     resolution: {integrity: sha512-h1Tuiir0m8J5yqN+Vx6qgKKk1L871e6a9o7rMwVWfu8Qs6Wg7x2R+wcxS3SO3VpW5JCxCat90rxPsZMYgz+HaQ==}
     hasBin: true
     peerDependencies:
@@ -5689,7 +5705,7 @@ packages:
       picocolors: 1.0.0
       sade: 1.8.1
       svelte: 3.55.0
-      svelte-preprocess: 4.10.7_uldce6htlskfyklq5y55tk7pdy
+      svelte-preprocess: 4.10.7_nq7iz5ahyq7ey7rsxvk46dafhu
       typescript: 4.9.4
     transitivePeerDependencies:
       - '@babel/core'
@@ -5731,7 +5747,7 @@ packages:
       svelte-parse-markup: 0.1.1_svelte@3.55.0
     dev: true
 
-  /svelte-preprocess/4.10.7_uldce6htlskfyklq5y55tk7pdy:
+  /svelte-preprocess/4.10.7_nq7iz5ahyq7ey7rsxvk46dafhu:
     resolution: {integrity: sha512-sNPBnqYD6FnmdBrUmBCaqS00RyCsCpj2BG58A1JBswNF7b0OKviwxqVrOL/CKyJrLSClrSeqQv5BXNg2RUbPOw==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
@@ -5777,6 +5793,7 @@ packages:
       detect-indent: 6.1.0
       magic-string: 0.25.9
       postcss: 8.4.20
+      sass: 1.57.1
       sorcery: 0.10.0
       strip-indent: 3.0.0
       svelte: 3.55.0
@@ -6193,7 +6210,7 @@ packages:
       fast-glob: 3.2.12
       pretty-bytes: 6.0.0
       rollup: 3.7.4
-      vite: 4.0.1_@types+node@18.11.15
+      vite: 4.0.1_dafpqtgzuh3dllqnfjfs7kj5ci
       workbox-build: 6.5.4
       workbox-window: 6.5.4
     transitivePeerDependencies:
@@ -6201,7 +6218,7 @@ packages:
       - supports-color
     dev: true
 
-  /vite/4.0.1_@types+node@18.11.15:
+  /vite/4.0.1_dafpqtgzuh3dllqnfjfs7kj5ci:
     resolution: {integrity: sha512-kZQPzbDau35iWOhy3CpkrRC7It+HIHtulAzBhMqzGHKRf/4+vmh8rPDDdv98SWQrFWo6//3ozwsRmwQIPZsK9g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -6231,6 +6248,7 @@ packages:
       postcss: 8.4.20
       resolve: 1.22.1
       rollup: 3.7.4
+      sass: 1.57.1
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -6243,7 +6261,7 @@ packages:
       vite:
         optional: true
     dependencies:
-      vite: 4.0.1_@types+node@18.11.15
+      vite: 4.0.1_dafpqtgzuh3dllqnfjfs7kj5ci
     dev: true
 
   /vscode-oniguruma/1.7.0:

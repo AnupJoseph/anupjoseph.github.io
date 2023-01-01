@@ -1,5 +1,6 @@
 // sveltekit config type
 import type { Config } from '@sveltejs/kit'
+import sveltePreprocess from 'svelte-preprocess';
 // svelte adapter
 import adapterAuto from '@sveltejs/adapter-auto'
 import adapterNode from '@sveltejs/adapter-node'
@@ -14,7 +15,7 @@ const defineConfig = (config: Config) => config
 
 export default defineConfig({
   extensions: ['.svelte', ...(mdsvexConfig.extensions as string[])],
-  preprocess: [mdsvex(mdsvexConfig), importAssets(), vitePreprocess()],
+  preprocess: [mdsvex(mdsvexConfig), importAssets(), vitePreprocess(),sveltePreprocess()],
   kit: {
     adapter: Object.keys(process.env).some(key => ['VERCEL', 'CF_PAGES', 'NETLIFY'].includes(key))
       ? adapterAuto()
