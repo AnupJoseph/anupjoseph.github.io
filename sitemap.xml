@@ -11,13 +11,18 @@
     </url>
     
         <url>
+            <loc>https://https://anupjoseph.github.io//me/about</loc>
+            <lastmod>2023-01-01T00:00:00.000Z</lastmod>
+            <priority>0.5</priority>
+        </url>
+        <url>
             <loc>https://https://anupjoseph.github.io//me</loc>
             <lastmod>2022-12-30T00:00:00.000Z</lastmod>
             <priority>0.5</priority>
         </url>
         <url>
             <loc>https://https://anupjoseph.github.io//me/links</loc>
-            <lastmod>2022-12-31T12:14:59.420Z</lastmod>
+            <lastmod>2023-01-01T12:41:48.779Z</lastmod>
             <priority>0.5</priority>
         </url>
   </urlset>
