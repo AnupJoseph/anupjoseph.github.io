@@ -57,7 +57,7 @@ export const header: HeaderConfig = {
   nav: [
     {
       text: 'About Me',
-      link: '/me'
+      link: '/me/about'
     },
     {
       text: 'Posts',
